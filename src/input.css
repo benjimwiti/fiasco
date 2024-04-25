@@ -8,10 +8,10 @@
     background-color: aqua;
 }
 
-.two-thirds {
-    min-height: 66vh;;
+.five-sixth {
+    min-height: calc(100vh*5/6);
 }
 
-.one-third{
-    min-height:33vh;
+.one-sixth{
+    min-height: calc(100vh*1/6);
 }

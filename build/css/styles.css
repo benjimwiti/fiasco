@@ -582,18 +582,6 @@ video {
   background-size: cover;
 }
 
-.bg-fixed {
-  background-attachment: fixed;
-}
-
-.bg-local {
-  background-attachment: local;
-}
-
-.bg-scroll {
-  background-attachment: scroll;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -608,12 +596,12 @@ video {
   background-color: aqua;
 }
 
-.two-thirds {
-  min-height: 66vh;
+.five-sixth {
+  min-height: calc(100vh*5/6);
 }
 
-.one-third{
-  min-height:33vh;
+.one-sixth{
+  min-height: calc(100vh*1/6);
 }
 
 @media (prefers-color-scheme: dark) {
