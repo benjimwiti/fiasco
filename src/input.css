@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.aqua-test {
+    background-color: aqua;
+}
+
+.two-thirds {
+    min-height: 66vh;;
+}
+
+.one-third{
+    min-height:33vh;
+}

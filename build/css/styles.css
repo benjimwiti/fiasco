@@ -554,27 +554,18 @@ video {
   --tw-contain-style:  ;
 }
 
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.min-h-screen {
+  min-height: 100vh;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.bg-slate-500 {
+.bg-amber-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
-.bg-cyan-600 {
+.bg-green-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(8 145 178 / var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
 .bg-slate-300 {
@@ -582,9 +573,47 @@ video {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
-.bg-white {
+.bg-slate-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-local {
+  background-attachment: local;
+}
+
+.bg-scroll {
+  background-attachment: scroll;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.aqua-test {
+  background-color: aqua;
+}
+
+.two-thirds {
+  min-height: 66vh;
+}
+
+.one-third{
+  min-height:33vh;
 }
 
 @media (prefers-color-scheme: dark) {
