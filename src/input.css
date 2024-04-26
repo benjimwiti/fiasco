@@ -190,3 +190,11 @@ input[type="checkbox"]:checked + label {
 .navy-blue {
     background-color: #150578;
 }
+
+.sky-magenta {
+    background-color: #B378A4;
+}
+
+.light-green {
+    background-color: #c1fba4;
+}
