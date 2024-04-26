@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal W-Site</title>
     <link rel="stylesheet" href="./css/styles.css">
+    
 </head>
 
 <body class="bg-slate-300 text-slate-950 dark:bg-slate-950 dark:text-slate-100">
@@ -12,16 +15,19 @@
         <div id="welcome-sec" class="min-h-screen bg-green-500">
             <div id="hero" class="five-sixth bg-cover" style="background-image: url('/build/img/hero.jpg');"></div>
             <h1 id="my-name" class="one-sixth bg-amber-500">the benedict mwiti expo  ripples using the outline</h1>
+           
         </div>
 
         <hr class="my-8">
 
-        <nav class="bg-teal-500 p-4">
-            <section id="section container" class="max-w-3xl mx-auto flex justify-between bg-fuchsia-600 p-8">
+        <nav id="nav" class="bg-purple-800 p-4 min-h-screen hidden md:block">
+            <section id="section container" class="max-w-3xl mx-auto flex justify-around gap-8 bg-fuchsia-600 p-8">
                 <a href="#projects">Gifts & Offerings</a>
-                <a href="">Home</a>
+                <a href="#">Home</a>
+                <a href="#contacts"></a>
                 <a href="#aboutme">My Profile</a>
             </section>
+            <a href="#projects" id="next-page" class="sticky bottom-4 max-w-min"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span></a>
         </nav>
     </header>
     
@@ -30,14 +36,16 @@
     <main>
         <section id="projects">
             <h1 class="bg-lime-500  text-lg text-center">Projects display</h1>
+            <a href="#aboutme" id="next-page" class="sticky bottom-4"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span></a>
             <section id="project-container" class="p-4 project-container gap-4 ">
-                    <div id="html-container" class="bg-pink-400 html-c p-4  flex flex-col justify-center items-center">
+                    <div id="html-container" class="bg-pink-400 relative html-c p-4  flex flex-col justify-center items-center">
                         
-                        <h2 class="bg-slate-400 max-w-screen-xl text-center min-w-36">html</h2>
-                            <ul class="bg-red-500 ">
-                                <li class="">Text basics </li>
-                                <li class="">Lists</li>
-                                <li class="text-lg">Forms</li>
+                        <h2 class="bg-slate-400 max-w-screen-xl text-center min-w-36"><em>html summary</em></h2>
+                            <ul class="bg-red-500 hover:text-5xl">
+                                <div class="circle absolute rounded-lg left-4 "></div>
+                                <li class="hover:bg-green">Text basics </li>
+                                <li>Lists</li>
+                                <li>Forms</li>
                                 <li>Tables</li>
                                 <li>Images</li>
                                 <li class="hover:cursor-not-allowed">Links</li>
@@ -47,17 +55,24 @@
                     </div>
 
                     <div id="css-container" class="css-c p-4 bg-emerald-400 ">
-                        <h2 class="text-xl text-center">css final project</h2>
-                        <section class="columns-3 p-4">
-                            <p>a very long week, loads of content .</p>
-                            <p>to consolidate 8-topics <em>make list with animated rolling balls on side</em></p>
-                            <p>float the links <em>grids-bro? or will the html table from the 24chapter do!!</em></p>
-                            <p>final project demanded a make-over, quite the clash of colours nevertheless brought a bang to the site.  <strike> <strong>apply these to headers </strong> </strike></p>
+                        <h2 class="text-3xl text-center"><em>css final project</em></h2>
+                        <section class="columns-3 p-4 colu">
+                            <p>The projects were comprehensivly worked on and aimed at integration of a range toos, some of them are listed below </p>
+                            <ol>
+                                <li>Implemented  typography</li>
+                                <li>Media queries</li>
+                                <li>Pseudo-elements</li>
+                                <li>Flex and Grid displays</li>
+                                <li>Positional flexibility in css</li>
+                                <li>Handling backgrounds</li>
+                                <li>Animations</li>
+                                <li>Functions and variables</li>
+                            </ol>
                         </section>
                     </div>
 
                         <div id="tailwindcss-container" class="tailwindcss-c p-4 bg-indigo-500">
-                            <h2>taiwind overview</h2>
+                            <h2 class="text-3xl text-center"><em>Taiwind overview</em></h2>
 
                         </div>
                 </section>
@@ -65,16 +80,17 @@
 <hr class="my-8">
       
             <section id="aboutme" class="min-h-screen">
+                <a href="#container-aboutme2" id="aboutme" class="sticky bottom-4"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span></a>
                 <h1>aboutme</h1>
                     <section id="float container" class="bg-emerald-400 max-w-4xl mx-auto flow-root rounded-lg">
                         <div id="floating image" class="h-40 w-40 float-left pr-8 bg-cover rounded-tl-lg rounded-bl-lg" style="background-image: url(../build/img/assistant.jpg);"></div>
                             
-                        <section id="assistant" class="bg-emerald-500 rounded-lg text-center text-xl">
-                            the brains and muscle
+                        <section id="assistant" class="bg-emerald-500 rounded-lg text-center text-8xl p-8">
+                            The Gang
                         </section>
 
-                        <div class="float-right bg-pink-600 p-8 hover:bg-purple-800">
-                            The gang, Rayo and Ben, <br> the day's mission: brainstorming 
+                        <div id="dancing"  class="float-right vibez bg-pink-600 p-8 hover:bg-purple-800 hover:min-h-96 " >
+                            Brain and Muscle <br>Bonnie and Clyde <br>Rayo and Ben<br> the day's mission: brainstorming 
                         </div>
                     </section>
             </section> 
@@ -82,6 +98,7 @@
                     <h2>the inspirations grid and cards</h2>
 
                     <section id="container-aboutme2" class="min-h-screen">
+                        <a href="#contacts" id="next-page" class="sticky bottom-4"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span></a>
                         <section id="grid-card-animation" class="grid grid-rows-2 p-4 gap-4">
                             <div id="anime" class="grid grid-cols-4 ">
                                     <div id="quote-background" class="bg-red-500 col-start-1 col-end-4 flex justify-center animation-reveal">
@@ -108,14 +125,21 @@
     
     <hr class="my-8">
     
-    <footer>
+    <footer id="contacts" class=" p-12 flex flex-row justify-between">
+       <button class="border-teal-300 p-4 border">
+        <span class="text-5xl">📬</span> <a href="mailto:wevdev@gmail.com" class="text-cyan-500 dark:text-zinc-700 hover:text-blue-300">Mail Me</a>
+       </button>
+       
+       <button class="border-teal-300 p-4 border hover:bg-slate-700">
+         <a href="#" class="text-cyan-500 dark:text-zinc-700 hover:text-blue-300">
+            <span class="text-5xl">🪂</span>
+            <br>
+            <span class="text-8xl skew-x-12">🏁</span></a>
+       </button>
         
-            <details>
-                <summary>
-                    social media accounts
-                </summary>
-                none unfortunately emoji
-            </details>
+       <button id="contacts" class="border-teal-300 p-4 border">
+            <span class="text-5xl">☎️</span><a href="tel:+123 700 000 000" class="text-cyan-500 hover:text-cyan-300 dark:text-zinc-700">+123-700-000-000</a>
+        </button>
         
     </footer>
 </body>
