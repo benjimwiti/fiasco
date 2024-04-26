@@ -15,3 +15,46 @@
 .one-sixth{
     min-height: calc(100vh*1/6);
 }
+
+.animation-reveal {
+    animation-duration:4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: reveal;
+    transform-origin: left;
+
+}
+
+@keyframes reveal {
+    0%{
+        transform: scaleX(0);
+    }
+    
+    80%{
+        transform: scaleX(1.333333);
+    }
+
+    100%{
+        transform: scaleX(1.0);
+    }
+}
+
+.mk-animation {
+    animation: reveal-2 4s ease-in-out 1s 1  forwards;
+    transform-origin: right;
+}
+
+@keyframes reveal-2 {
+    0%{
+        transform: scaleX(0);
+    }
+    80%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+    
+}
