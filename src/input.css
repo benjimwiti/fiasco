@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Jacquard+12+Charted&display=swap');
 
 
 
@@ -21,7 +23,7 @@
     animation-timing-function: ease-in-out;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-name: reveal;
     transform-origin: left;
 
@@ -31,30 +33,34 @@
     0%{
         transform: scaleX(0);
     }
-    
-    80%{
+
+    50%{
         transform: scaleX(1.333333);
     }
 
-    100%{
+    60%{
         transform: scaleX(1.0);
+       
     }
 }
 
 .mk-animation {
     animation: reveal-2 4s ease-in-out 1s 1  forwards;
     transform-origin: right;
+    animation-iteration-count: infinite;
 }
 
 @keyframes reveal-2 {
     0%{
         transform: scaleX(0);
     }
-    80%{
+    50%{
         transform: scaleX(0);
     }
-    100%{
+    60%{
         transform: scaleX(1);
+        background-image: linear-gradient(from top, #f2b5d4, #f7d6e0);
+        transition-duration: 1s;
     }
     
 }
@@ -74,6 +80,7 @@
 
 .html-c {
     grid-area: html;
+    transition-timing-function: linear;
 }
 
 .css-c {
@@ -113,12 +120,73 @@
 
 
 .circle {
-    height: 1rem;
+    height: 100%;
     width: 1rem;
     border-color: blue;
-    border-radius: 50%;
     background-color: blueviolet;
     position: absolute;
-    left: 5rem;
+   
 }
 
+
+
+.dancing {
+    font-family: "Dancing Script", cursive;
+}
+
+.vibez {
+    font-family: 'Great Vibes', sans-serif ;
+}
+
+input[type="checkbox"]:checked + label {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    #openclose { 
+      font-size: 4rem;
+      background-color:#444;
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+    }
+    #navm {
+        display: flex;
+        flex-direction: column;
+        padding:0 4rem;
+        align-items: center;
+        background-color: #777;
+        /* flex flex-col py-8 items-center min-h-screen  */
+    }
+    
+  
+    }
+   
+    
+  #toggle {display: none;}
+  
+  input[type="checkbox"]:not(:checked) + label {
+    background-color: rgba(166, 255, 0, 0.849);
+    #navm{
+      display: none;
+      
+    }
+  
+  }
+  label:hover {
+  background-color: aqua;
+  }
+  
+  label:active {
+    transform: scale(0.9)}
+
+.bg-challenge {
+    background-image: linear-gradient(to left,#001c55,#00072d);
+}
+
+.nav-dark{
+    background-color: #8e518d;
+}
+
+.navy-blue {
+    background-color: #150578;
+}

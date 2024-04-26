@@ -13,19 +13,32 @@
 <body class="bg-slate-300 text-slate-950 dark:bg-slate-950 dark:text-slate-100">
     <header class="bg-slate-600">
         <div id="welcome-sec" class="min-h-screen bg-green-500">
-            <div id="hero" class="five-sixth bg-cover" style="background-image: url('/build/img/hero.jpg');"></div>
-            <h1 id="my-name" class="one-sixth bg-amber-500">the benedict mwiti expo  ripples using the outline</h1>
+            <div id="hero" class="five-sixth bg-cover" style="background-image: url('/build/img/hero.jpg');">
+                <a href="#nav" id="next-page" class="sticky bottom-4 max-w-min"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span></a>
+            </div>
+            <h1 id="my-name" class="one-sixth bg-challenge text-6xl shadow-xl text-center"><strong class="capitalize">I Benedict Mwiti </strong> accept your challenge</h1>
            
         </div>
 
         <hr class="my-8">
 
         <nav id="nav" class="bg-purple-800 p-4 min-h-screen hidden md:block">
-            <section id="section container" class="max-w-3xl mx-auto flex justify-around gap-8 bg-fuchsia-600 p-8">
+            <section id="section container" class="max-w-3xl mx-auto flex justify-around gap-8 bg-fuchsia-600 dark:nav-dark p-8">
                 <a href="#projects">Gifts & Offerings</a>
                 <a href="#">Home</a>
                 <a href="#contacts"></a>
                 <a href="#aboutme">My Profile</a>
+            
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" class="p-4 bg-cyan-950 w-16">
+                    <span class="text-3xl">&#9776;</span>
+                   <nav id="navm" class="hidden">
+                       <a href="#" class="py-6 w-full text-center hover:opacity-90">Home</a>
+                       <a href="#projects" class="py-6 w-full text-center hover:opacity-90">Gifts</a>
+                       <a href="#aboutme" class="py-6 w-full text-center hover:opacity-90">My Profile</a>
+                       <a href="#contacts" class="py-6 w-full text-center hover:opacity-90">Contact</a>
+                </label>
+
             </section>
             <a href="#projects" id="next-page" class="sticky bottom-4 max-w-min"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span></a>
         </nav>
@@ -35,30 +48,28 @@
     
     <main>
         <section id="projects">
-            <h1 class="bg-lime-500  text-lg text-center">Projects display</h1>
+            <h1 class="bg-lime-900  text-4xl text-center p-4">Projects display</h1>
             <a href="#aboutme" id="next-page" class="sticky bottom-4"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span></a>
             <section id="project-container" class="p-4 project-container gap-4 ">
-                    <div id="html-container" class="bg-pink-400 relative html-c p-4  flex flex-col justify-center items-center">
+                    <div id="html-container" class="bg-pink-400 dark:navy-blue relative html-c p-4  flex flex-col justify-center items-center">
                         
-                        <h2 class="bg-slate-400 max-w-screen-xl text-center min-w-36"><em>html summary</em></h2>
-                            <ul class="bg-red-500 hover:text-5xl">
-                                <div class="circle absolute rounded-lg left-4 "></div>
+                        <h2 class="bg-slate-400 max-w-screen-xl text-center text-3xl p-4"><em>html summary</em></h2>
+                            <ul class="bg-red-500 hover:text-4xl shadow-2xl flex flex-col justify-center items-center gap-1">
                                 <li class="hover:bg-green">Text basics </li>
                                 <li>Lists</li>
                                 <li>Forms</li>
                                 <li>Tables</li>
                                 <li>Images</li>
                                 <li class="hover:cursor-not-allowed">Links</li>
-                                <a href="" class="hover:cursor-not-allowed">hover over me</a>
                             </ul>
                             
                     </div>
 
                     <div id="css-container" class="css-c p-4 bg-emerald-400 ">
                         <h2 class="text-3xl text-center"><em>css final project</em></h2>
-                        <section class="columns-3 p-4 colu">
+                        <section class="p-4 columns-2xs">
                             <p>The projects were comprehensivly worked on and aimed at integration of a range toos, some of them are listed below </p>
-                            <ol>
+                            <ol class="list-decimal">
                                 <li>Implemented  typography</li>
                                 <li>Media queries</li>
                                 <li>Pseudo-elements</li>
@@ -73,7 +84,15 @@
 
                         <div id="tailwindcss-container" class="tailwindcss-c p-4 bg-indigo-500">
                             <h2 class="text-3xl text-center"><em>Taiwind overview</em></h2>
-
+                                Its here, that it become apparent,
+                                <blockquote class="relative rounded-3xl py-10 pl-10 pr-6 bg-pink-400 dark:bg-indigo-700">
+                                    <p class="mt-2 text-left text-xl text-white  dark:text-slate-400 sm:text-3xl before:content-['\201C'] before:absolute before:top-0 before:left-0 before:text-9xl after:absolute after:content-['\201C']   -after:bottom-5 after:right-0  after:text-9xl">
+                                        Just as Jesus, son of God is the way to the father <br>
+                                    so is tailwindcss the pathway to its <br> creater
+                                    </p>
+            
+                                </blockquote>
+                               
                         </div>
                 </section>
         </section>
@@ -95,25 +114,38 @@
                     </section>
             </section> 
 
-                    <h2>the inspirations grid and cards</h2>
+                    <h2 class="text-center text-5xl ">the inspirations grid and cards</h2>
 
                     <section id="container-aboutme2" class="min-h-screen">
                         <a href="#contacts" id="next-page" class="sticky bottom-4"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span></a>
                         <section id="grid-card-animation" class="grid grid-rows-2 p-4 gap-4">
                             <div id="anime" class="grid grid-cols-4 ">
                                     <div id="quote-background" class="bg-red-500 col-start-1 col-end-4 flex justify-center animation-reveal">
-                                        <div id="quote" class="border dark:border-white dark:bg-slate-700 rounded-md m-auto p-4 text-center text-xl  ">
+                                        <div id="quote" class="font-light border dark:border-white dark:bg-slate-700 rounded-md m-auto p-4 text-center text-xl  ">
                                             The inspiration, a hobby, a skill and maybe a career                             
                                         </div>
                                     </div>  
                                         
                                         <div id="card" class="border rounded-md flex flex-col col-start-4 mk-animation">
-                                            <div id="game-name" class="p-1.5 bg-indigo-500"><abbr title="Mortal Kombat">MK</abbr></div>
-                                            <div id="game-pic" class="border border-dotted dark:border-white rounded-2xl" ><img src="/build/img/rename.jpg" alt="">
+                                            <div id="game-name" class="p-1.5 bg-indigo-500 text-center text-lg">Mortal Kombat</div>
+                                            <div id="game-pic" class="border dark:border-white rounded-2xl" ><img src="/build/img/rename.jpg" alt="">
                                         </div>
                                     </div>
                             </div>
-                         <div class="bg-slate-500"></div>
+                         <div class="bg-slate-500"><div id="anime" class="grid grid-cols-4 ">
+                                    <div id="quote-background" class="bg-red-500 col-start-1 col-end-4 flex justify-center animation-reveal">
+                                        <div id="quote" class="border dark:border-white dark:bg-slate-700 rounded-md m-auto p-4 text-center text-xl  font-light">
+                                            Other hobbies...                             
+                                        </div>
+                                    </div>  
+                                        
+                                        <div id="card" class="border rounded-md flex flex-col col-start-4 mk-animation">
+                                            <div id="game-name" class="p-1.5 bg-indigo-500 text-center text-lg">Musique</div>
+                                            <div id="game-pic" class="border border-dotted dark:border-white rounded-2xl" ><img src="/build/img/music.jpg" alt="">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
                         
                         </section>
                     </section>
