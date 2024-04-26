@@ -11,14 +11,15 @@
     <header class="bg-slate-600">
         <div id="welcome-sec" class="min-h-screen bg-green-500">
             <div id="hero" class="five-sixth bg-cover" style="background-image: url('/build/img/hero.jpg');"></div>
-            <h1 id="my-name" class="one-sixth bg-amber-500">the benedict mwiti expo</h1>
+            <h1 id="my-name" class="one-sixth bg-amber-500">the benedict mwiti expo  ripples using the outline</h1>
         </div>
 
         <hr class="my-8">
 
         <nav class="bg-teal-500 p-4">
-            <section id="section container" class="max-w-5xl wx-auto flex justify-between ">
+            <section id="section container" class="max-w-3xl mx-auto flex justify-between bg-fuchsia-600 p-8">
                 <a href="#projects">Gifts & Offerings</a>
+                <a href="">Home</a>
                 <a href="#aboutme">My Profile</a>
             </section>
         </nav>
@@ -28,52 +29,78 @@
     
     <main>
         <section id="projects">
-            <h1 class="bg-lime-500 ">Projects display</h1>
-                <h2>html final project</h2>
-                    <ul class="bg-indigo-500">
-                        <li>6times</li>
-                    </ul>
+            <h1 class="bg-lime-500  text-lg text-center">Projects display</h1>
+            <section id="project-container" class="p-4 project-container gap-4 ">
+                    <div id="html-container" class="bg-pink-400 html-c p-4  flex flex-col justify-center items-center">
+                        
+                        <h2 class="bg-slate-400 max-w-screen-xl text-center min-w-36">html</h2>
+                            <ul class="bg-red-500 ">
+                                <li class="">Text basics </li>
+                                <li class="">Lists</li>
+                                <li class="text-lg">Forms</li>
+                                <li>Tables</li>
+                                <li>Images</li>
+                                <li class="hover:cursor-not-allowed">Links</li>
+                                <a href="" class="hover:cursor-not-allowed">hover over me</a>
+                            </ul>
+                            
+                    </div>
 
-                <h2>css final project</h2>
-                    <section class="columns-3">
-                        <p>it involved a grueling week , calender full schedule full .</p>
-                        <p>to consolidate 8-topics <em>make list with animated rolling balls on side</em></p>
-                        <p>float the links <em>grids-bro? or will the html table from the 24chapter do!!</em></p>
-                        <p>final project demanded a make-over, quite the clash of colours nevertheless brought a bang to the site.  <strike> <strong>apply these to headers </strong> </strike></p>
-                    </section>
+                    <div id="css-container" class="css-c p-4 bg-emerald-400 ">
+                        <h2 class="text-xl text-center">css final project</h2>
+                        <section class="columns-3 p-4">
+                            <p>a very long week, loads of content .</p>
+                            <p>to consolidate 8-topics <em>make list with animated rolling balls on side</em></p>
+                            <p>float the links <em>grids-bro? or will the html table from the 24chapter do!!</em></p>
+                            <p>final project demanded a make-over, quite the clash of colours nevertheless brought a bang to the site.  <strike> <strong>apply these to headers </strong> </strike></p>
+                        </section>
+                    </div>
+
+                        <div id="tailwindcss-container" class="tailwindcss-c p-4 bg-indigo-500">
+                            <h2>taiwind overview</h2>
+
+                        </div>
+                </section>
         </section>
 <hr class="my-8">
-        <section id="aboutme">
-            <h1>aboutme</h1>
-                <section id="float container" class="bg-emerald-400 max-w-4xl mx-auto flow-root rounded-lg">
-                    <div id="floating image" class="h-40 w-40 float-left pr-8 bg-cover rounded-tl-lg rounded-bl-lg" style="background-image: url(../build/img/assistant.jpg);"></div>
-                        
-                    <section id="assistant" class="bg-emerald-500 rounded-lg text-center text-xl">
-                        the brains and muscle
-                    </section>
-
-                    <div class="float-right bg-pink-600 p-8">
-                        The gang, Rayo and Ben, <br> the day's mission: brainstorming 
-                    </div>
-                </section>
-                
-                    <h2>the inspirations grid and cards</h2>
-                <section id="grid-card-animation" class="grid grid-rows-2 p-4 gap-4">
-                   <div id="anime" class="grid grid-cols-4 ">
-                        <div id="quote-background" class="bg-red-500 col-start-1 col-end-4 flex justify-center animation-reveal">
-                            <div id="quote" class="border dark:border-white dark:bg-slate-700 rounded-md m-auto p-4 text-center text-xl  ">
-                                The inspiration, a hobby, a skill and maybe a career                             
-                            </div>
-                        </div>  
+      
+            <section id="aboutme" class="min-h-screen">
+                <h1>aboutme</h1>
+                    <section id="float container" class="bg-emerald-400 max-w-4xl mx-auto flow-root rounded-lg">
+                        <div id="floating image" class="h-40 w-40 float-left pr-8 bg-cover rounded-tl-lg rounded-bl-lg" style="background-image: url(../build/img/assistant.jpg);"></div>
                             
-                            <div id="card" class="border rounded-md flex flex-col col-start-4 mk-animation">
-                                <div id="game-name" class="p-1.5 bg-indigo-500"><abbr title="Mortal Kombat">MK</abbr></div>
-                                <div id="game-pic" class="border border-dotted dark:border-white rounded-2xl" ><img src="/build/img/rename.jpg" alt="">
-                            </div>
+                        <section id="assistant" class="bg-emerald-500 rounded-lg text-center text-xl">
+                            the brains and muscle
+                        </section>
+
+                        <div class="float-right bg-pink-600 p-8 hover:bg-purple-800">
+                            The gang, Rayo and Ben, <br> the day's mission: brainstorming 
                         </div>
-                   </div>
-                   <div class="bg-slate-500"></div>
-                </section>
+                    </section>
+            </section> 
+
+                    <h2>the inspirations grid and cards</h2>
+
+                    <section id="container-aboutme2" class="min-h-screen">
+                        <section id="grid-card-animation" class="grid grid-rows-2 p-4 gap-4">
+                            <div id="anime" class="grid grid-cols-4 ">
+                                    <div id="quote-background" class="bg-red-500 col-start-1 col-end-4 flex justify-center animation-reveal">
+                                        <div id="quote" class="border dark:border-white dark:bg-slate-700 rounded-md m-auto p-4 text-center text-xl  ">
+                                            The inspiration, a hobby, a skill and maybe a career                             
+                                        </div>
+                                    </div>  
+                                        
+                                        <div id="card" class="border rounded-md flex flex-col col-start-4 mk-animation">
+                                            <div id="game-name" class="p-1.5 bg-indigo-500"><abbr title="Mortal Kombat">MK</abbr></div>
+                                            <div id="game-pic" class="border border-dotted dark:border-white rounded-2xl" ><img src="/build/img/rename.jpg" alt="">
+                                        </div>
+                                    </div>
+                            </div>
+                         <div class="bg-slate-500"></div>
+                        
+                        </section>
+                    </section>
+                    
 
         </section>
 

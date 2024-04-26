@@ -58,3 +58,67 @@
     }
     
 }
+
+* {
+    transition:all 1s;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "html html html html"
+    "css css tailwindcss tailwindcss" ;   
+}
+
+.html-c {
+    grid-area: html;
+}
+
+.css-c {
+    grid-area: css;
+}
+
+.tailwindcss-c {
+    grid-area: tailwindcss;
+}
+
+.ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.list-animation {
+    animation-name: list;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    transition: 2s;
+}
+
+@keyframes list {
+    0% {
+        list-style-position: outside ;}
+
+    25% {
+        list-style-position: inside;}
+     
+    50% {list-style-position: outside;}
+    100% {list-style-position: inside;}
+}
+
+
+
+.circle {
+    height: 1rem;
+    width: 1rem;
+    border-color: blue;
+    border-radius: 50%;
+    background-color: blueviolet;
+    position: absolute;
+    left: 5rem;
+}
+
