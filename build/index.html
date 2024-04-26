@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="bg-slate-300 text-5xl text-slate-950 dark:bg-slate-950 dark:text-slate-100">
+<body class="bg-slate-300 text-slate-950 dark:bg-slate-950 dark:text-slate-100">
     <header class="bg-slate-600">
         <div id="welcome-sec" class="min-h-screen bg-green-500">
             <div id="hero" class="five-sixth bg-cover" style="background-image: url('/build/img/hero.jpg');"></div>
@@ -49,23 +49,20 @@
                 </section>
                 
                     <h2>the inspirations grid and cards</h2>
-                <section class="grid grid-cols-5 grid-rows-5 p-4 ">
-                    <div id="LW" class="border rounded-md flex flex-col col-start-2  col-end-3 row-start-2 row-end-3">
-                        <div id="game-name" class="p-8 bg-indigo-500"></div>
-                        <div id="game-pic" class="p-8 border border-dotted rounded-2xl" ><img src="" alt="" width="200" height="200"></div>
-                    </div>
-                    <div id="RW" class="border rounded-md flex flex-col col-start-4 col-end-5 row-start-2 row-end-3">
-                        <div id="game-name" class="p-8 bg-indigo-500"></div>
-                        <div id="game-pic" class="p-8 border-dotted rounded-2xl" ><img src="" alt="" width="200" height="200"></div>
-                    </div>
-                    <div id="LB" class="border rounded-md flex flex-col col-start-2  col-end-3 row-start-4 row-end-5">
-                        <div id="game-name" class="p-8 bg-indigo-500"></div>
-                        <div id="game-pic" class="p-8 border-dotted rounded-2xl" ><img src="" alt="" width="200" height="200"></div>
-                    </div>
-                    <div id="RB" class="border rounded-md flex flex-col col-span-2  row-span-2 col-start-4 col-end-5 row-start-4 row-end-5">
-                        <div id="game-name" class="p-8 bg-indigo-500"></div>
-                        <div id="game-pic" class="p-8 border-dotted rounded-2xl" ><img src="" alt="" width="200" height="200"></div>
-                    </div>
+                <section id="grid-card-animation" class="grid grid-rows-2 p-4 gap-4">
+                   <div id="anime" class="grid grid-cols-4">
+                        <div id="quote-background" class="bg-red-500 col-start-1 col-end-4 flex justify-center">
+                            <div id="quote" class="border dark:border-white dark:bg-slate-700 rounded-md m-auto p-4 text-center text-xl  ">The inspiration, a hobby, a skill and maybe a career                             
+                            </div>
+                        </div>  
+                            
+                            <div id="card" class="border rounded-md flex flex-col col-start-4">
+                                <div id="game-name" class="p-1.5 bg-indigo-500"><abbr title="Mortal Kombat">MK</abbr></div>
+                                <div id="game-pic" class="border border-dotted dark:border-white rounded-2xl" ><img src="/build/img/rename.jpg" alt="">
+                            </div>
+                        </div>
+                   </div>
+                   <div class="bg-slate-500"></div>
                 </section>
 
         </section>
