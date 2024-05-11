@@ -6,16 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal W-Site</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./styles.css">
     
 </head>
 
 <body class="bg-white text-slate-950 dark:bg-slate-950 dark:text-slate-100">
     <header class="bg-slate-600">
         <div id="welcome-sec" class="min-h-screen bg-green-500">
-            <div id="hero" class="five-sixth bg-cover" style="background-image: url('/build/img/hero.jpg');">
-                <a href="#nav" id="next-page" class="sticky bottom-4 max-w-min"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span></a>
+            <div id="hero" class="five-sixth bg-cover relative" style="background-image: url('./img/hero.jpg');">
+                <a href="#nav" id="next-page" class="sticky bottom-4 max-w-min"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span>
+                </a>
+                <div class="outline absolute outline-emerald-400 bg-black h-16 w-16 top-4"></div>
+                <div class="outline absolute outline-indigo-500 bg-transparent h-16 w-16"></div>
+                <div class="outline absolute outline-blue-400 bg-transparent h-16 w-16"></div>
             </div>
             <h1 id="my-name" class="bg-cyan-400 one-sixth  dark:bg-challenge text-4xl shadow-xl text-center"><strong class="capitalize">I, Benedict Mwiti ,</strong> accept your challenge <br><em class="text-xl">refer top left-for easy navigation</em></h1>
            
@@ -103,7 +106,7 @@
                 <a href="#container-aboutme2" id="aboutme" class="sticky bottom-4"><span class="text-4xl text-pink-400 dark:text-indigo-800">&#9875;</span><br><span class="text2xl dark:text-slate-200">next-page</span></a>
                 <h1>aboutme</h1>
                     <section id="float container" class="bg-emerald-400 dark:bg-emerald-900 max-w-4xl mx-auto flow-root rounded-lg">
-                        <div id="floating image" class="h-40 w-40 float-left pr-8 bg-cover rounded-tl-lg rounded-bl-lg" style="background-image: url(../build/img/assistant.jpg);"></div>
+                        <div id="floating image" class="h-40 w-40 float-left pr-8 bg-cover rounded-tl-lg rounded-bl-lg" style="background-image: url(./img/assistant.jpg);"></div>
                             
                         <section id="assistant" class="bg-emerald-500 dark:bg-emerald-700 rounded-lg text-center text-8xl p-8">
                             The Gang
@@ -129,7 +132,7 @@
                                         
                                         <div id="card" class="border rounded-md flex flex-col col-start-4 mk-animation">
                                             <div id="game-name" class="p-1.5 bg-indigo-500 text-center text-lg">Mortal Kombat</div>
-                                            <div id="game-pic" class="border dark:border-white rounded-2xl" ><img src="/build/img/rename.jpg" alt="">
+                                            <div id="game-pic" class="border dark:border-white rounded-2xl" ><img src="./img/rename.jpg" alt="">
                                         </div>
                                     </div>
                             </div>
@@ -142,7 +145,7 @@
                                         
                                         <div id="card" class="border rounded-md flex flex-col col-start-4 mk-animation">
                                             <div id="game-name" class="p-1.5 bg-indigo-500 text-center text-lg">Musique</div>
-                                            <div id="game-pic" class="border border-dotted dark:border-white rounded-2xl" ><img src="/build/img/music.jpg" alt="">
+                                            <div id="game-pic" class="border border-dotted dark:border-white rounded-2xl" ><img src="./img/music.jpg" alt="">
                                         </div>
                                     </div>
                             </div>

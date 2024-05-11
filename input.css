@@ -45,7 +45,7 @@
 }
 
 .mk-animation {
-    animation: reveal-2 4s ease-in-out 1s 1  forwards;
+    animation: reveal-2 8s ease-in-out 1s 1  forwards;
     transform-origin: right;
     animation-iteration-count: infinite;
 }
